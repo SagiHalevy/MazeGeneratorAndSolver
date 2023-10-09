@@ -13,7 +13,6 @@ This Python program generates and solves mazes using the Turtle graphics library
  **Clone this repository** to your local machine:
 
    ```bash
-   git clone <repository_url>
    pip install turtle
    python maze_solver.py
 ```
