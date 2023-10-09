@@ -2,7 +2,7 @@ import random
 import turtle
 from turtle import Screen
 from tkinter import *
-mazeSize = 7 # size of the maze X by X
+mazeSize = 17 # size of the maze X by X
 sectionSize = 20 # size of each wall's tile
 
 stack = [] # stack for creating the maze
@@ -146,7 +146,7 @@ def createMaze():
 #heuristic value for a specific tile using manhattan distance
 def heuristic(tile, heur):
     match heur:
-        case "Manhatten":
+        case "A*":
             #target location
             targetRow = 0
             targetCol = mazeSize-1
@@ -190,7 +190,7 @@ def solve():
 
         InsertPossibleMoves(nextTile)
 
-        if chosenHeur == 'Manhatten':  # sort the stack so the closest tile will be at top (lowest heuristic value) (x[2]) is the heuristic value
+        if chosenHeur == 'A*':  # sort the stack so the closest tile will be at top (lowest heuristic value) (x[2]) is the heuristic value
             solveStack.sort(key = lambda x : x[2] ,reverse=True)
 
 
@@ -229,10 +229,10 @@ solveButton.pack()
 solveButton.place(x=300, y=50)  # place the button anywhere on the screen
 
 heuristicChosen = StringVar(canvas.master)
-heuristicChosen.set("Manhatten") # default value
-heurisitcsList = OptionMenu(canvas.master, heuristicChosen, "Manhatten", "Backtracking")
+heuristicChosen.set("A*") # default value
+heurisitcsList = OptionMenu(canvas.master, heuristicChosen, "A*", "Backtracking")
 heurisitcsList.pack()
 heurisitcsList.place(x=400,y=50)
-drawMaze(-400,300,10)
+drawMaze(-200,100,10)
 solveButton["state"] = NORMAL
 turtle.done()
