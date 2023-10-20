@@ -26,3 +26,6 @@ The A* algorithm uses the Manhattan distance heuristic to find the shortest path
 **Backtracking Algorithm**  
 The Backtracking algorithm explores the maze by recursively searching for a path from the start to the exit. If it reaches a dead-end, it backtracks to the previous tile and continues exploring until it finds a path to the exit.
 
+
+![GIF Recording 2023-10-20 at 3 42 00 PM](https://github.com/SagiHalevy/mail/assets/92096601/08b86293-50a1-4df2-b24c-89e8d258769e)
+
