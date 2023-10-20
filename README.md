@@ -34,3 +34,6 @@ The Backtracking algorithm explores the maze by recursively searching for a path
 
 ![mazepic](https://github.com/SagiHalevy/mail/assets/92096601/48cc9b9a-0e9b-4fa3-b834-cc85c2ed2f75)
 
+
+![solvedmaze](https://github.com/SagiHalevy/mail/assets/92096601/debfdd62-3207-4fde-bf6c-92d413a52cae)
+
